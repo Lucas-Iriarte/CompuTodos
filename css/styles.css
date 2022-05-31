@@ -10,10 +10,10 @@
             /* index */
 
 
-.container {
+.container-index {
     display: grid;
     grid-template-columns: 14% auto 14%;
-    grid-template-rows: auto 90vh auto auto auto auto auto 230px;
+    grid-template-rows: auto 90vh auto auto auto auto auto auto;
     grid-template-areas:
     "header header header"
     "background background background"
@@ -58,53 +58,45 @@ footer {
     grid-area: footer;
 }
 
-.logo {
-    position: absolute;
-    display: flex;
-    align-items: center;
+header {
+    width: 100%;
 }
 
-.logo img {
+.logo__a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.color-default {
+    color: #00FFF6;
+}
+
+.menu-desplegable {
+    transition: all 1s;
+}
+
+.nav-item {
+    font-weight: bold;
+}
+
+.nav-item a:hover {
+    color: #05a29c;
+}
+
+.nav-item a:hover i {
+    color: #05a29c;
+}
+
+header {
+    position: relative;
     height: 60px;
 }
 
-.logo h1 {
-    display: inline-block;
-    font-size: 20px;
-}
-
-.logo h1 a {
-    text-decoration: none;
-}
-
-.checkbtn {
-    display: block;
-    text-align: end;
-    padding-right:1rem;
-}
-
-.nav__ul {
-    text-align: center;
-    margin-top: 1.2rem;
-}
-
-.nav__ul a {
-    text-decoration: none;
-    font-weight: 700;
-}
-
-.nav__ul li i {
-    padding-right:.5rem;
-}
-
-.nav__ul__li a:hover {
-    color: #05a29c;
-    text-decoration: underline;
-}
-
-.nav__ul__li a:hover i {
-    color: #05a29c;
-    text-decoration: underline;
+.navbar {
+    width: 100%;
+    position: absolute;
+    z-index: 100;
 }
 
 .background {
@@ -195,20 +187,20 @@ footer {
     margin: 0 auto;
 }
 
-.container-table {
-    width: 100%;
-}
-
-table {
+.tabla-index {
     border-collapse: collapse;
     margin: 0 auto;
     width: 100%;
     max-width: 500px;
 }
 
-.table__caption {
+.caption-tabla {
     border: 1px solid #00FFF6;
     padding: 1rem;
+}
+
+.container-tabla {
+    width: 100%;
 }
 
 .thead__th{
@@ -248,38 +240,6 @@ table {
     padding-top: .5rem;
 }
 
-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: hidden;
-}
-
-.container-dividing-line2 {
-    display:block;
-    width: 100%;
-}
-
-.title__footer {
-    display: block;
-    text-align: center;
-    padding: 0 1rem;
-}
-
-.contacto {
-    display: block;
-}
-
-.footer__span {
-    display:block;
-    text-align: center;
-    padding: .5rem;
-}
-
-.footer__span i {
-    padding-right: .5rem;
-}
-
 .copyright {
     color: #00aaa3;
 }
@@ -289,11 +249,10 @@ footer {
 
 
 
-
 .container-register {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto auto auto;
+    grid-template-rows: auto 90vh auto;
     grid-template-areas: "header header"
     "contenido-register contenido-register"
     "footer footer";
@@ -303,77 +262,15 @@ footer {
     grid-area: contenido-register;
 }
 
-.form-register {
-    padding: 1rem;
-    border-radius: .5rem;
-    width: 100%;
+.form-background {
     background-image: url(../images/register-background.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.form__input {
-    display: block;
-    width: 100%;
-    margin: 1rem 0;
-    padding: .7rem;
-    border-radius: .5rem;
-    background: #fff;
-    border: none;
-    color: #000;
-}
-
-.form__input::placeholder {
-    color: #000;
-}
-
-.form__h4 {
-    text-align: center;
-    background: #333;
-    color: #fff;
-    padding: 1rem;
-    border-radius: 1rem;
-}
-
-.form__label {
-    display: block;
-    text-align: center;
-    background: transparent;
-}
-
-.form__input:focus {
-    outline: none;
-}
-
-.form__label a {
-    background: transparent;
-}
-
-.button-register {
-    display: block;
-    text-align: center;
-    margin: 1rem auto;
-    border: 1px solid #00FFF6;
-    padding: .3rem .5rem;
-    border-radius: 10px;
-    background: transparent;
-    font-weight: larger;
-}
-
-.button-register:hover {
-    cursor: pointer;
-    background: #00FFF6;
-    color: #000;
-}
-
-.form__p {
-    text-align: center;
-    background: transparent;
-}
-
-.form__p a {
-    background: transparent;
+.form-registrarse {
+    max-width: 500px;
 }
 
 
@@ -569,7 +466,7 @@ footer {
 .container-help {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: 60px 90vh auto;
     grid-template-areas: "header"
     "contenido-help"
     "footer";
@@ -678,28 +575,15 @@ footer {
     .thead__th{
         padding: 1rem .3rem;
     }
-    
-    .container-register {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto 90vh auto;
-        grid-template-areas: "header header"
-        "contenido-register contenido-register"
-        "footer footer";
-    }
 
-    .form-register {
-        max-width: 480px;
-        background: rgba(0,0,0,.5);
-        backdrop-filter: blur(8px);
+    .form-registrarse {
+    backdrop-filter: blur(8px); 
+    background: rgba(0,0,0,.5); 
+    margin: 0 auto;
     }
 
     .form-background {
-        background-image: url(../images/register-background.png);
-        background-position: center;
-        background-repeat: no-repeat;
         background-attachment: fixed;
-        background-size: cover;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -707,10 +591,6 @@ footer {
 
     .slider-tools ul li img {
         width: 100%;
-    }
-
-    .form__h4 {
-        background: transparent;
     }
 
     .contenido-help {
@@ -764,20 +644,6 @@ footer {
         width: 33%;
     }
 
-    .nav__ul {
-        margin-top: 60px;
-    }
-
-    .nav__ul__li {
-        display: inline-block;
-        padding: 0 .5rem;
-    }
-
-
-    .checkbtn, #check {
-        display: none;
-    }
-
     .container-sobre-nosotros {
         grid-template-rows: auto 90vh auto;
     }
@@ -798,60 +664,8 @@ footer {
 
 @media screen and (min-width:768px) {
 
-    .nav__ul {
-        text-align: end;
-        margin-top: 0;
-        margin-right: .5rem;
-    }
-
-    .nav__ul__li {
-        display: inline-block;
-        padding-left: .5rem;
-    }
-
-    .checkbtn, #check {
-        display: none;
-    }
-
-
-    .nav {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        height: 60px;
-    }
-
-    .container {
-        grid-template-rows: 60px 90vh auto auto auto auto auto 130px;
-    }
-
-    .title__footer {
-        text-align: center;
-        display: block;
-    }
-
-    footer span {
-        display: inline-block;
-    }
-
-    .contacto {
-        display: flex;
-        justify-content: space-evenly;
-    }
-    
-    .copyright {
-        display: block;
-        text-align: center;
-    }
-
-    .contenido-help {
-        display: flex;
-        align-content: flex-start;
-        align-items: center;
-    }
-
-    .container-help {
-        grid-template-rows: auto 90vh auto;
+    .container-index {
+        grid-template-rows: 60px 90vh auto auto auto auto auto auto;
     }
 
     .container-sobre-nosotros {
@@ -881,7 +695,7 @@ footer {
 
 @media screen and (min-width:1023px) {
 
-    .container {
+    .container-index {
         grid-template-rows: auto 90vh auto auto auto auto auto auto;
         grid-template-areas:
         "header header header"
@@ -889,7 +703,7 @@ footer {
         "section1 section1 noticias"
         "iframe-table iframe-table iframe-table"
         "noticias2 section2 section2"
-        "noticias2 footer footer";
+        "footer footer footer";
     }
 
     .noticias1,.noticias2 {
@@ -904,51 +718,7 @@ footer {
         width: 100%;
         padding: 0;
     }
-
-    .container-slider-table {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
-
-    .container-table {
-        width: 50%;
-        margin: 0;
-        padding: 1rem;
-    }
-
-    .slider-dividing-line {
-        width: 50%;
-    }
     
-    table {
-        border-collapse: collapse;
-        margin: 0;
-        width: 100%;
-        max-width: none;
-    }
-
-    .slider-effect {
-        display: inline-block;
-        max-width: none;
-    }
-
-    .slider-dividing-line {
-        padding: 1rem;
-    }
-
-    .dividing-line {
-        width: 100%;
-        margin: 0;
-    }
-    
-    .container-dividing-line {
-        width: 100%;
-        margin: 0;
-        max-width: none;
-    }
-
     .noticia-10 {
         display: none;
     }
@@ -967,14 +737,14 @@ footer {
 }
 
 @media screen and (min-width:1200px) {
-    .container {
+    .container-index {
         grid-template-areas:
         "header header header"
         "background background background"
         "section1 section1 noticias"
         "iframe-table iframe-table noticias"
         "noticias2 section2 section2"
-        "noticias2 footer footer";
+        "footer footer footer";
         grid-template-rows: auto 90vh auto auto auto auto auto auto;
         
     }
