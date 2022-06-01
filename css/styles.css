@@ -97,10 +97,39 @@ header {
     height: 60px;
 }
 
+<<<<<<< HEAD
 .navbar {
     width: 100%;
     position: absolute;
     z-index: 100;
+=======
+.logo h1 {
+    display: inline-block;
+    font-size: 20px;
+}
+
+.logo h1 a {
+    text-decoration: none;
+}
+
+.checkbtn {
+    display: block;
+    text-align: end;
+    padding-right:1rem;
+}
+
+.nav__ul {
+    text-align: center;
+    margin-top: 1.2rem;
+}
+
+.nav__ul a {
+    text-decoration: none;
+}
+
+.nav__ul li i {
+    padding-right:.5rem;
+>>>>>>> parent of 8b8ab47 (Animaciones y transformaciones)
 }
 
 .background {
@@ -120,7 +149,6 @@ header {
     padding: 10px;
     text-align: center;
     background: rgba(0,0,0,.5);
-    backdrop-filter: blur(5px);
     text-shadow: 5px 5px 5px #000;
     border-radius: 10px;
     color: #fff;
@@ -154,30 +182,14 @@ header {
 	display: flex;
 	padding: 0;
 	width: 400%;
-    animation: slide 20s infinite alternate;
 }
 
 .slider-effect li {
 	width: 100%;
-    list-style-type: none;
 }
 
 .slider-effect img {
 	width: 100%;
-}
-
-@keyframes slide {
-    0% {margin-left: 0;}
-    20% {margin-left: 0;}
-
-    25% {margin-left: -100%;}
-    45% {margin-left: -100%;}
-
-    50% {margin-left: -200%;}
-    70% {margin-left: -200%;}
-
-    75% {margin-left: -300%;}
-    100% {margin-left: -300%;}
 }
 
 .dividing-line, .dividing-line2 {
@@ -262,23 +274,81 @@ header {
     "footer footer";
 }
 
+
 .form-background {
     grid-area: contenido-register;
 }
 
+<<<<<<< HEAD
 .form-background {
+=======
+
+.form-register {
+    padding: 1rem;
+    border-radius: .5rem;
+    width: 100%;
+>>>>>>> parent of 8b8ab47 (Animaciones y transformaciones)
     background-image: url(../images/register-background.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+<<<<<<< HEAD
 .form-background form {
+=======
+.form__input {
+    display: block;
+    width: 100%;
+    margin: 1rem 0;
+    padding: .7rem;
+    border-radius: .5rem;
+    background: #fff;
+    border: none;
+    color: #000;
+}
+
+.form__h4 {
+    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.form__label {
+    display: block;
+    text-align: center;
+>>>>>>> parent of 8b8ab47 (Animaciones y transformaciones)
     background: transparent;
 } 
 
+<<<<<<< HEAD
 .form-registrarse {
     max-width: 500px;
+=======
+.form__label a {
+    background: transparent;
+}
+
+.button-register {
+    display: block;
+    text-align: center;
+    margin: 1rem auto;
+    border: 1px solid #00FFF6;
+    padding: .3rem .5rem;
+    border-radius: 10px;
+    background: transparent;
+}
+
+.form__p {
+    text-align: center;
+    background: transparent;
+}
+
+.form__p a {
+    background: transparent;
+>>>>>>> parent of 8b8ab47 (Animaciones y transformaciones)
 }
 
 
@@ -371,8 +441,10 @@ header {
 }
 
             /* Herramientas */
- 
-
+           
+.slider-effect-tools {
+    overflow: hidden;
+}
 
 .container-herramientas {
     display: grid;
@@ -384,63 +456,45 @@ header {
     "footer";
 }
 
+<<<<<<< HEAD
+=======
+.slider-tools ul {
+    display: flex;
+}
+
+>>>>>>> parent of 8b8ab47 (Animaciones y transformaciones)
 .background-tools {
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .h2-tools {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     background: rgba(0,0,0,.5);
-    padding:.2rem .5rem;
-    border-radius: .5rem;
-    color: #fff;
-    background: rgba(0,0,0,.2);
-    backdrop-filter: blur(8px);
-}
-
-.background-tools {
-    overflow: hidden;
-}
-
-.slider-tools ul li{
-    width: 100%;
-    list-style-type: none;
-    height: 90vh;
-    background-size: cover;
-    background-position: center;
-}
-
-.lista1 {
-    background-image: url(../images/imagen6.jpg);
-    width: 100%;
-}
-
-.li2 {
-    background-image: url(../images/imagen7.jpg);
-}
-
-.li3 {
-    background-image: url(../images/imagen8.jpg);
-}
-
-.li4 {
-    background-image: url(../images/imagen9.jpg);
+    padding: .5rem 1rem;
+    border-radius: 1rem;
 }
 
 .slider-tools {
-    overflow: hidden;
-    margin: .5rem auto 0 auto;
+	width: 100%;
 }
 
-.slider-tools ul{
+.slider-tools ul {
     display: flex;
-    padding: 0;
-    width: 400%;
-    animation: slide 20s infinite alternate;
+    width: 100%;
+    max-height: fit-content;
 }
+
+.slider-tools ul li img{
+    width: 100%;
+}
+
+.article__tools {
+    padding: 1rem;
+}
+
 
 .ul__li {
     padding-top: 1rem;
@@ -515,10 +569,6 @@ header {
     color: #000;
 }
 
-.form-help input:focus {
-    outline: none;
-}
-
 .form-help textarea {
     margin-top: 20px;
     width: 100%;
@@ -526,25 +576,19 @@ header {
     resize: none;
     padding: .5rem;
     border-radius: .5rem;
-    color: #000;
+    color: #fff;
     background: #fff;
 }
 
 .form__help__button {
-    display: block;
     text-align: center;
-    margin: 1rem auto;
-    border: 1px solid #00FFF6;
-    padding: .3rem .5rem;
+    margin: 20px auto;
+    display: block;
+    padding: 3px 10px;
     border-radius: 10px;
-    background: transparent;
-    font-weight: larger;
-}
-
-.form__help__button:hover {
-    background: #00FFF6;
-    color: #000;
-    cursor: pointer;
+    border: 1px solid #00FFF6;
+    color: white;
+    background: rgba(0,0,0,.5);
 }
 
 .form-help p {
@@ -584,8 +628,11 @@ header {
 
     .form-background form {
         background: rgba(0,0,0,.5);
+<<<<<<< HEAD
         backdrop-filter: blur(8px); 
         margin: 0 auto;
+=======
+>>>>>>> parent of 8b8ab47 (Animaciones y transformaciones)
     }
 
     .form-background {
@@ -595,8 +642,13 @@ header {
         align-items: center;
     }
 
+<<<<<<< HEAD
     .slider-tools ul li img {
         width: 100%;
+=======
+    .form__h4 {
+        background: transparent;
+>>>>>>> parent of 8b8ab47 (Animaciones y transformaciones)
     }
 
     .contenido-help {
@@ -615,8 +667,7 @@ header {
 
     .form-help {
         background-image: none;
-        background: rgba(0,0,0,.2);
-        backdrop-filter: blur(8px);
+        background: rgba(0,0,0,.5);
     }
 
     .contenido-help {
@@ -761,25 +812,5 @@ header {
 
     .noticia-10, .noticia-9 {
         display: none;
-    }
-
-    .proyecto1 a, .proyecto2 a,.proyecto3 a {
-        transition: all 1s;
-    }
-
-    .proyecto1 a:hover {
-        box-shadow: -1px -1px 10px #FF0AC8, 1px 1px 10px #00FFF6;
-        transform: scale(1.02);
-    }
-    
-    .proyecto2 a:hover {
-        box-shadow: -1px -1px 10px #FF0AC8, 1px 1px 10px #00FFF6;
-        transform: scale(1.02);
-    }
-    
-    
-    .proyecto3 a:hover {
-        box-shadow: -1px -1px 10px #FF0AC8, 1px 1px 10px #00FFF6;
-        transform: scale(1.02);
     }
 }
