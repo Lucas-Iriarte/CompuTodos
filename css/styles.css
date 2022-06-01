@@ -97,39 +97,10 @@ header {
     height: 60px;
 }
 
-<<<<<<< HEAD
 .navbar {
     width: 100%;
     position: absolute;
     z-index: 100;
-=======
-.logo h1 {
-    display: inline-block;
-    font-size: 20px;
-}
-
-.logo h1 a {
-    text-decoration: none;
-}
-
-.checkbtn {
-    display: block;
-    text-align: end;
-    padding-right:1rem;
-}
-
-.nav__ul {
-    text-align: center;
-    margin-top: 1.2rem;
-}
-
-.nav__ul a {
-    text-decoration: none;
-}
-
-.nav__ul li i {
-    padding-right:.5rem;
->>>>>>> parent of 8b8ab47 (Animaciones y transformaciones)
 }
 
 .background {
@@ -279,76 +250,19 @@ header {
     grid-area: contenido-register;
 }
 
-<<<<<<< HEAD
 .form-background {
-=======
-
-.form-register {
-    padding: 1rem;
-    border-radius: .5rem;
-    width: 100%;
->>>>>>> parent of 8b8ab47 (Animaciones y transformaciones)
     background-image: url(../images/register-background.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-<<<<<<< HEAD
 .form-background form {
-=======
-.form__input {
-    display: block;
-    width: 100%;
-    margin: 1rem 0;
-    padding: .7rem;
-    border-radius: .5rem;
-    background: #fff;
-    border: none;
-    color: #000;
-}
-
-.form__h4 {
-    text-align: center;
-    background: #333;
-    color: #fff;
-    padding: 1rem;
-    border-radius: 1rem;
-}
-
-.form__label {
-    display: block;
-    text-align: center;
->>>>>>> parent of 8b8ab47 (Animaciones y transformaciones)
     background: transparent;
 } 
 
-<<<<<<< HEAD
 .form-registrarse {
     max-width: 500px;
-=======
-.form__label a {
-    background: transparent;
-}
-
-.button-register {
-    display: block;
-    text-align: center;
-    margin: 1rem auto;
-    border: 1px solid #00FFF6;
-    padding: .3rem .5rem;
-    border-radius: 10px;
-    background: transparent;
-}
-
-.form__p {
-    text-align: center;
-    background: transparent;
-}
-
-.form__p a {
-    background: transparent;
->>>>>>> parent of 8b8ab47 (Animaciones y transformaciones)
 }
 
 
@@ -456,13 +370,6 @@ header {
     "footer";
 }
 
-<<<<<<< HEAD
-=======
-.slider-tools ul {
-    display: flex;
-}
-
->>>>>>> parent of 8b8ab47 (Animaciones y transformaciones)
 .background-tools {
     position: relative;
     display: flex;
@@ -628,11 +535,8 @@ header {
 
     .form-background form {
         background: rgba(0,0,0,.5);
-<<<<<<< HEAD
         backdrop-filter: blur(8px); 
         margin: 0 auto;
-=======
->>>>>>> parent of 8b8ab47 (Animaciones y transformaciones)
     }
 
     .form-background {
@@ -642,13 +546,8 @@ header {
         align-items: center;
     }
 
-<<<<<<< HEAD
     .slider-tools ul li img {
         width: 100%;
-=======
-    .form__h4 {
-        background: transparent;
->>>>>>> parent of 8b8ab47 (Animaciones y transformaciones)
     }
 
     .contenido-help {
