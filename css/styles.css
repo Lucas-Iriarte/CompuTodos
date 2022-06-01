@@ -13,11 +13,7 @@
 .container-index {
     display: grid;
     grid-template-columns: 14% auto 14%;
-<<<<<<< HEAD
     grid-template-rows: 60px 90vh auto auto auto auto auto auto;
-=======
-    grid-template-rows: auto 90vh auto auto auto auto auto auto;
->>>>>>> e4eb0bb6864ee183f5de793783c96fc20f430485
     grid-template-areas:
     "header header header"
     "background background background"
@@ -72,13 +68,10 @@ header {
     text-decoration: none;
 }
 
-<<<<<<< HEAD
 .logo__a img {
     width: 60px;
 }
 
-=======
->>>>>>> e4eb0bb6864ee183f5de793783c96fc20f430485
 .color-default {
     color: #00FFF6;
 }
@@ -263,11 +256,7 @@ header {
 .container-register {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-<<<<<<< HEAD
     grid-template-rows: 60px 90vh auto;
-=======
-    grid-template-rows: auto 90vh auto;
->>>>>>> e4eb0bb6864ee183f5de793783c96fc20f430485
     grid-template-areas: "header header"
     "contenido-register contenido-register"
     "footer footer";
@@ -284,13 +273,10 @@ header {
     background-size: cover;
 }
 
-<<<<<<< HEAD
 .form-background form {
     background: transparent;
 } 
 
-=======
->>>>>>> e4eb0bb6864ee183f5de793783c96fc20f430485
 .form-registrarse {
     max-width: 500px;
 }
@@ -378,7 +364,6 @@ header {
     text-align: center;
 }
 
-
 .section-sobre-nosotros {
     text-align: center;
     padding: 1rem;
@@ -398,7 +383,6 @@ header {
     "contenido-tools"
     "footer";
 }
-
 
 .background-tools {
     position: relative;
@@ -598,17 +582,10 @@ header {
         padding: 1rem .3rem;
     }
 
-<<<<<<< HEAD
     .form-background form {
         background: rgba(0,0,0,.5);
         backdrop-filter: blur(8px); 
         margin: 0 auto;
-=======
-    .form-registrarse {
-    backdrop-filter: blur(8px); 
-    background: rgba(0,0,0,.5); 
-    margin: 0 auto;
->>>>>>> e4eb0bb6864ee183f5de793783c96fc20f430485
     }
 
     .form-background {
