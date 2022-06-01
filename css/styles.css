@@ -372,34 +372,60 @@ header {
 
 .background-tools {
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .h2-tools {
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background: rgba(0,0,0,.5);
-    padding: .5rem 1rem;
-    border-radius: 1rem;
+    padding:.2rem .5rem;
+    border-radius: .5rem;
+    color: #fff;
+    background: rgba(0,0,0,.2);
+    backdrop-filter: blur(8px);
+}
+
+.background-tools {
+    overflow: hidden;
+}
+
+.slider-tools ul li{
+    width: 100%;
+    list-style-type: none;
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.lista1 {
+    background-image: url(../images/imagen6.jpg);
+    width: 100%;
+}
+
+.li2 {
+    background-image: url(../images/imagen7.jpg);
+}
+
+.li3 {
+    background-image: url(../images/imagen8.jpg);
+}
+
+.li4 {
+    background-image: url(../images/imagen9.jpg);
 }
 
 .slider-tools {
-	width: 100%;
+    overflow: hidden;
+    margin: .5rem auto 0 auto;
 }
 
-.slider-tools ul {
+.slider-tools ul{
     display: flex;
-    width: 100%;
-    max-height: fit-content;
-}
-
-.slider-tools ul li img{
-    width: 100%;
-}
-
-.article__tools {
-    padding: 1rem;
+    padding: 0;
+    width: 400%;
+    animation: slide 20s infinite alternate;
 }
 
 
