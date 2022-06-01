@@ -90,21 +90,10 @@ footer {
 
 .nav__ul a {
     text-decoration: none;
-    font-weight: 700;
 }
 
 .nav__ul li i {
     padding-right:.5rem;
-}
-
-.nav__ul__li a:hover {
-    color: #05a29c;
-    text-decoration: underline;
-}
-
-.nav__ul__li a:hover i {
-    color: #05a29c;
-    text-decoration: underline;
 }
 
 .background {
@@ -124,7 +113,6 @@ footer {
     padding: 10px;
     text-align: center;
     background: rgba(0,0,0,.5);
-    backdrop-filter: blur(5px);
     text-shadow: 5px 5px 5px #000;
     border-radius: 10px;
     color: #fff;
@@ -158,30 +146,14 @@ footer {
 	display: flex;
 	padding: 0;
 	width: 400%;
-    animation: slide 20s infinite alternate;
 }
 
 .slider-effect li {
 	width: 100%;
-    list-style-type: none;
 }
 
 .slider-effect img {
 	width: 100%;
-}
-
-@keyframes slide {
-    0% {margin-left: 0;}
-    20% {margin-left: 0;}
-
-    25% {margin-left: -100%;}
-    45% {margin-left: -100%;}
-
-    50% {margin-left: -200%;}
-    70% {margin-left: -200%;}
-
-    75% {margin-left: -300%;}
-    100% {margin-left: -300%;}
 }
 
 .dividing-line, .dividing-line2 {
@@ -299,9 +271,11 @@ footer {
     "footer footer";
 }
 
+
 .form-background {
     grid-area: contenido-register;
 }
+
 
 .form-register {
     padding: 1rem;
@@ -324,10 +298,6 @@ footer {
     color: #000;
 }
 
-.form__input::placeholder {
-    color: #000;
-}
-
 .form__h4 {
     text-align: center;
     background: #333;
@@ -342,10 +312,6 @@ footer {
     background: transparent;
 }
 
-.form__input:focus {
-    outline: none;
-}
-
 .form__label a {
     background: transparent;
 }
@@ -358,13 +324,6 @@ footer {
     padding: .3rem .5rem;
     border-radius: 10px;
     background: transparent;
-    font-weight: larger;
-}
-
-.button-register:hover {
-    cursor: pointer;
-    background: #00FFF6;
-    color: #000;
 }
 
 .form__p {
@@ -467,8 +426,10 @@ footer {
 }
 
             /* Herramientas */
- 
-
+           
+.slider-effect-tools {
+    overflow: hidden;
+}
 
 .container-herramientas {
     display: grid;
@@ -480,64 +441,42 @@ footer {
     "footer";
 }
 
+.slider-tools ul {
+    display: flex;
+}
 
 .background-tools {
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .h2-tools {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     background: rgba(0,0,0,.5);
-    padding:.2rem .5rem;
-    border-radius: .5rem;
-    color: #fff;
-    background: rgba(0,0,0,.2);
-    backdrop-filter: blur(8px);
-}
-
-.background-tools {
-    overflow: hidden;
-}
-
-.slider-tools ul li{
-    width: 100%;
-    list-style-type: none;
-    height: 90vh;
-    background-size: cover;
-    background-position: center;
-}
-
-.lista1 {
-    background-image: url(../images/imagen6.jpg);
-    width: 100%;
-}
-
-.li2 {
-    background-image: url(../images/imagen7.jpg);
-}
-
-.li3 {
-    background-image: url(../images/imagen8.jpg);
-}
-
-.li4 {
-    background-image: url(../images/imagen9.jpg);
+    padding: .5rem 1rem;
+    border-radius: 1rem;
 }
 
 .slider-tools {
-    overflow: hidden;
-    margin: .5rem auto 0 auto;
+	width: 100%;
 }
 
-.slider-tools ul{
+.slider-tools ul {
     display: flex;
-    padding: 0;
-    width: 400%;
-    animation: slide 20s infinite alternate;
+    width: 100%;
+    max-height: fit-content;
 }
+
+.slider-tools ul li img{
+    width: 100%;
+}
+
+.article__tools {
+    padding: 1rem;
+}
+
 
 .ul__li {
     padding-top: 1rem;
@@ -612,10 +551,6 @@ footer {
     color: #000;
 }
 
-.form-help input:focus {
-    outline: none;
-}
-
 .form-help textarea {
     margin-top: 20px;
     width: 100%;
@@ -623,25 +558,19 @@ footer {
     resize: none;
     padding: .5rem;
     border-radius: .5rem;
-    color: #000;
+    color: #fff;
     background: #fff;
 }
 
 .form__help__button {
-    display: block;
     text-align: center;
-    margin: 1rem auto;
-    border: 1px solid #00FFF6;
-    padding: .3rem .5rem;
+    margin: 20px auto;
+    display: block;
+    padding: 3px 10px;
     border-radius: 10px;
-    background: transparent;
-    font-weight: larger;
-}
-
-.form__help__button:hover {
-    background: #00FFF6;
-    color: #000;
-    cursor: pointer;
+    border: 1px solid #00FFF6;
+    color: white;
+    background: rgba(0,0,0,.5);
 }
 
 .form-help p {
@@ -691,7 +620,6 @@ footer {
     .form-register {
         max-width: 480px;
         background: rgba(0,0,0,.5);
-        backdrop-filter: blur(8px);
     }
 
     .form-background {
@@ -703,10 +631,6 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-
-    .slider-tools ul li img {
-        width: 100%;
     }
 
     .form__h4 {
@@ -729,8 +653,7 @@ footer {
 
     .form-help {
         background-image: none;
-        background: rgba(0,0,0,.2);
-        backdrop-filter: blur(8px);
+        background: rgba(0,0,0,.5);
     }
 
     .contenido-help {
@@ -985,25 +908,5 @@ footer {
 
     .noticia-10, .noticia-9 {
         display: none;
-    }
-
-    .proyecto1 a, .proyecto2 a,.proyecto3 a {
-        transition: all 1s;
-    }
-
-    .proyecto1 a:hover {
-        box-shadow: -1px -1px 10px #FF0AC8, 1px 1px 10px #00FFF6;
-        transform: scale(1.02);
-    }
-    
-    .proyecto2 a:hover {
-        box-shadow: -1px -1px 10px #FF0AC8, 1px 1px 10px #00FFF6;
-        transform: scale(1.02);
-    }
-    
-    
-    .proyecto3 a:hover {
-        box-shadow: -1px -1px 10px #FF0AC8, 1px 1px 10px #00FFF6;
-        transform: scale(1.02);
     }
 }
