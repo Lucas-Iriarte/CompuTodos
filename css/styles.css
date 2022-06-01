@@ -10,10 +10,10 @@
             /* index */
 
 
-.container {
+.container-index {
     display: grid;
     grid-template-columns: 14% auto 14%;
-    grid-template-rows: auto 90vh auto auto auto auto auto 230px;
+    grid-template-rows: 60px 90vh auto auto auto auto auto auto;
     grid-template-areas:
     "header header header"
     "background background background"
@@ -58,16 +58,51 @@ footer {
     grid-area: footer;
 }
 
-.logo {
-    position: absolute;
-    display: flex;
-    align-items: center;
+header {
+    width: 100%;
 }
 
-.logo img {
+.logo__a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo__a img {
+    width: 60px;
+}
+
+.color-default {
+    color: #00FFF6;
+}
+
+.menu-desplegable {
+    transition: all 1s;
+}
+
+.nav-item {
+    font-weight: bold;
+}
+
+.nav-item a:hover {
+    color: #05a29c;
+}
+
+.nav-item a:hover i {
+    color: #05a29c;
+}
+
+header {
+    position: relative;
     height: 60px;
 }
 
+<<<<<<< HEAD
+.navbar {
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+=======
 .logo h1 {
     display: inline-block;
     font-size: 20px;
@@ -90,21 +125,11 @@ footer {
 
 .nav__ul a {
     text-decoration: none;
-    font-weight: 700;
 }
 
 .nav__ul li i {
     padding-right:.5rem;
-}
-
-.nav__ul__li a:hover {
-    color: #05a29c;
-    text-decoration: underline;
-}
-
-.nav__ul__li a:hover i {
-    color: #05a29c;
-    text-decoration: underline;
+>>>>>>> parent of 8b8ab47 (Animaciones y transformaciones)
 }
 
 .background {
@@ -124,7 +149,6 @@ footer {
     padding: 10px;
     text-align: center;
     background: rgba(0,0,0,.5);
-    backdrop-filter: blur(5px);
     text-shadow: 5px 5px 5px #000;
     border-radius: 10px;
     color: #fff;
@@ -158,30 +182,14 @@ footer {
 	display: flex;
 	padding: 0;
 	width: 400%;
-    animation: slide 20s infinite alternate;
 }
 
 .slider-effect li {
 	width: 100%;
-    list-style-type: none;
 }
 
 .slider-effect img {
 	width: 100%;
-}
-
-@keyframes slide {
-    0% {margin-left: 0;}
-    20% {margin-left: 0;}
-
-    25% {margin-left: -100%;}
-    45% {margin-left: -100%;}
-
-    50% {margin-left: -200%;}
-    70% {margin-left: -200%;}
-
-    75% {margin-left: -300%;}
-    100% {margin-left: -300%;}
 }
 
 .dividing-line, .dividing-line2 {
@@ -195,20 +203,20 @@ footer {
     margin: 0 auto;
 }
 
-.container-table {
-    width: 100%;
-}
-
-table {
+.tabla-index {
     border-collapse: collapse;
     margin: 0 auto;
     width: 100%;
     max-width: 500px;
 }
 
-.table__caption {
+.caption-tabla {
     border: 1px solid #00FFF6;
     padding: 1rem;
+}
+
+.container-tabla {
+    width: 100%;
 }
 
 .thead__th{
@@ -248,38 +256,6 @@ table {
     padding-top: .5rem;
 }
 
-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: hidden;
-}
-
-.container-dividing-line2 {
-    display:block;
-    width: 100%;
-}
-
-.title__footer {
-    display: block;
-    text-align: center;
-    padding: 0 1rem;
-}
-
-.contacto {
-    display: block;
-}
-
-.footer__span {
-    display:block;
-    text-align: center;
-    padding: .5rem;
-}
-
-.footer__span i {
-    padding-right: .5rem;
-}
-
 .copyright {
     color: #00aaa3;
 }
@@ -289,30 +265,38 @@ footer {
 
 
 
-
 .container-register {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto auto auto;
+    grid-template-rows: 60px 90vh auto;
     grid-template-areas: "header header"
     "contenido-register contenido-register"
     "footer footer";
 }
 
+
 .form-background {
     grid-area: contenido-register;
 }
+
+<<<<<<< HEAD
+.form-background {
+=======
 
 .form-register {
     padding: 1rem;
     border-radius: .5rem;
     width: 100%;
+>>>>>>> parent of 8b8ab47 (Animaciones y transformaciones)
     background-image: url(../images/register-background.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+<<<<<<< HEAD
+.form-background form {
+=======
 .form__input {
     display: block;
     width: 100%;
@@ -321,10 +305,6 @@ footer {
     border-radius: .5rem;
     background: #fff;
     border: none;
-    color: #000;
-}
-
-.form__input::placeholder {
     color: #000;
 }
 
@@ -339,13 +319,14 @@ footer {
 .form__label {
     display: block;
     text-align: center;
+>>>>>>> parent of 8b8ab47 (Animaciones y transformaciones)
     background: transparent;
-}
+} 
 
-.form__input:focus {
-    outline: none;
-}
-
+<<<<<<< HEAD
+.form-registrarse {
+    max-width: 500px;
+=======
 .form__label a {
     background: transparent;
 }
@@ -358,13 +339,6 @@ footer {
     padding: .3rem .5rem;
     border-radius: 10px;
     background: transparent;
-    font-weight: larger;
-}
-
-.button-register:hover {
-    cursor: pointer;
-    background: #00FFF6;
-    color: #000;
 }
 
 .form__p {
@@ -374,6 +348,7 @@ footer {
 
 .form__p a {
     background: transparent;
+>>>>>>> parent of 8b8ab47 (Animaciones y transformaciones)
 }
 
 
@@ -386,7 +361,7 @@ footer {
 .container-sobre-nosotros {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-rows: 60px auto auto auto auto auto;
     grid-template-areas: "header"
     "contenido-sobre-nosotros"
     "h3-mas-sobre-nosotros"
@@ -459,7 +434,6 @@ footer {
     text-align: center;
 }
 
-
 .section-sobre-nosotros {
     text-align: center;
     padding: 1rem;
@@ -467,77 +441,60 @@ footer {
 }
 
             /* Herramientas */
- 
-
+           
+.slider-effect-tools {
+    overflow: hidden;
+}
 
 .container-herramientas {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto 90vh auto auto;
+    grid-template-rows: 60px 90vh auto auto;
     grid-template-areas: "header"
     "background-tools"
     "contenido-tools"
     "footer";
 }
 
+<<<<<<< HEAD
+=======
+.slider-tools ul {
+    display: flex;
+}
 
+>>>>>>> parent of 8b8ab47 (Animaciones y transformaciones)
 .background-tools {
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .h2-tools {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     background: rgba(0,0,0,.5);
-    padding:.2rem .5rem;
-    border-radius: .5rem;
-    color: #fff;
-    background: rgba(0,0,0,.2);
-    backdrop-filter: blur(8px);
-}
-
-.background-tools {
-    overflow: hidden;
-}
-
-.slider-tools ul li{
-    width: 100%;
-    list-style-type: none;
-    height: 90vh;
-    background-size: cover;
-    background-position: center;
-}
-
-.lista1 {
-    background-image: url(../images/imagen6.jpg);
-    width: 100%;
-}
-
-.li2 {
-    background-image: url(../images/imagen7.jpg);
-}
-
-.li3 {
-    background-image: url(../images/imagen8.jpg);
-}
-
-.li4 {
-    background-image: url(../images/imagen9.jpg);
+    padding: .5rem 1rem;
+    border-radius: 1rem;
 }
 
 .slider-tools {
-    overflow: hidden;
-    margin: .5rem auto 0 auto;
+	width: 100%;
 }
 
-.slider-tools ul{
+.slider-tools ul {
     display: flex;
-    padding: 0;
-    width: 400%;
-    animation: slide 20s infinite alternate;
+    width: 100%;
+    max-height: fit-content;
 }
+
+.slider-tools ul li img{
+    width: 100%;
+}
+
+.article__tools {
+    padding: 1rem;
+}
+
 
 .ul__li {
     padding-top: 1rem;
@@ -569,7 +526,7 @@ footer {
 .container-help {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: 60px 90vh auto;
     grid-template-areas: "header"
     "contenido-help"
     "footer";
@@ -612,10 +569,6 @@ footer {
     color: #000;
 }
 
-.form-help input:focus {
-    outline: none;
-}
-
 .form-help textarea {
     margin-top: 20px;
     width: 100%;
@@ -623,25 +576,19 @@ footer {
     resize: none;
     padding: .5rem;
     border-radius: .5rem;
-    color: #000;
+    color: #fff;
     background: #fff;
 }
 
 .form__help__button {
-    display: block;
     text-align: center;
-    margin: 1rem auto;
-    border: 1px solid #00FFF6;
-    padding: .3rem .5rem;
+    margin: 20px auto;
+    display: block;
+    padding: 3px 10px;
     border-radius: 10px;
-    background: transparent;
-    font-weight: larger;
-}
-
-.form__help__button:hover {
-    background: #00FFF6;
-    color: #000;
-    cursor: pointer;
+    border: 1px solid #00FFF6;
+    color: white;
+    background: rgba(0,0,0,.5);
 }
 
 .form-help p {
@@ -678,39 +625,30 @@ footer {
     .thead__th{
         padding: 1rem .3rem;
     }
-    
-    .container-register {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto 90vh auto;
-        grid-template-areas: "header header"
-        "contenido-register contenido-register"
-        "footer footer";
-    }
 
-    .form-register {
-        max-width: 480px;
+    .form-background form {
         background: rgba(0,0,0,.5);
-        backdrop-filter: blur(8px);
+<<<<<<< HEAD
+        backdrop-filter: blur(8px); 
+        margin: 0 auto;
+=======
+>>>>>>> parent of 8b8ab47 (Animaciones y transformaciones)
     }
 
     .form-background {
-        background-image: url(../images/register-background.png);
-        background-position: center;
-        background-repeat: no-repeat;
         background-attachment: fixed;
-        background-size: cover;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
+<<<<<<< HEAD
     .slider-tools ul li img {
         width: 100%;
-    }
-
+=======
     .form__h4 {
         background: transparent;
+>>>>>>> parent of 8b8ab47 (Animaciones y transformaciones)
     }
 
     .contenido-help {
@@ -729,8 +667,7 @@ footer {
 
     .form-help {
         background-image: none;
-        background: rgba(0,0,0,.2);
-        backdrop-filter: blur(8px);
+        background: rgba(0,0,0,.5);
     }
 
     .contenido-help {
@@ -764,20 +701,6 @@ footer {
         width: 33%;
     }
 
-    .nav__ul {
-        margin-top: 60px;
-    }
-
-    .nav__ul__li {
-        display: inline-block;
-        padding: 0 .5rem;
-    }
-
-
-    .checkbtn, #check {
-        display: none;
-    }
-
     .container-sobre-nosotros {
         grid-template-rows: auto 90vh auto;
     }
@@ -798,60 +721,8 @@ footer {
 
 @media screen and (min-width:768px) {
 
-    .nav__ul {
-        text-align: end;
-        margin-top: 0;
-        margin-right: .5rem;
-    }
-
-    .nav__ul__li {
-        display: inline-block;
-        padding-left: .5rem;
-    }
-
-    .checkbtn, #check {
-        display: none;
-    }
-
-
-    .nav {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        height: 60px;
-    }
-
-    .container {
-        grid-template-rows: 60px 90vh auto auto auto auto auto 130px;
-    }
-
-    .title__footer {
-        text-align: center;
-        display: block;
-    }
-
-    footer span {
-        display: inline-block;
-    }
-
-    .contacto {
-        display: flex;
-        justify-content: space-evenly;
-    }
-    
-    .copyright {
-        display: block;
-        text-align: center;
-    }
-
-    .contenido-help {
-        display: flex;
-        align-content: flex-start;
-        align-items: center;
-    }
-
-    .container-help {
-        grid-template-rows: auto 90vh auto;
+    .container-index {
+        grid-template-rows: 60px 90vh auto auto auto auto auto auto;
     }
 
     .container-sobre-nosotros {
@@ -881,7 +752,7 @@ footer {
 
 @media screen and (min-width:1023px) {
 
-    .container {
+    .container-index {
         grid-template-rows: auto 90vh auto auto auto auto auto auto;
         grid-template-areas:
         "header header header"
@@ -889,7 +760,7 @@ footer {
         "section1 section1 noticias"
         "iframe-table iframe-table iframe-table"
         "noticias2 section2 section2"
-        "noticias2 footer footer";
+        "footer footer footer";
     }
 
     .noticias1,.noticias2 {
@@ -904,51 +775,7 @@ footer {
         width: 100%;
         padding: 0;
     }
-
-    .container-slider-table {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
-
-    .container-table {
-        width: 50%;
-        margin: 0;
-        padding: 1rem;
-    }
-
-    .slider-dividing-line {
-        width: 50%;
-    }
     
-    table {
-        border-collapse: collapse;
-        margin: 0;
-        width: 100%;
-        max-width: none;
-    }
-
-    .slider-effect {
-        display: inline-block;
-        max-width: none;
-    }
-
-    .slider-dividing-line {
-        padding: 1rem;
-    }
-
-    .dividing-line {
-        width: 100%;
-        margin: 0;
-    }
-    
-    .container-dividing-line {
-        width: 100%;
-        margin: 0;
-        max-width: none;
-    }
-
     .noticia-10 {
         display: none;
     }
@@ -967,14 +794,14 @@ footer {
 }
 
 @media screen and (min-width:1200px) {
-    .container {
+    .container-index {
         grid-template-areas:
         "header header header"
         "background background background"
         "section1 section1 noticias"
         "iframe-table iframe-table noticias"
         "noticias2 section2 section2"
-        "noticias2 footer footer";
+        "footer footer footer";
         grid-template-rows: auto 90vh auto auto auto auto auto auto;
         
     }
@@ -985,25 +812,5 @@ footer {
 
     .noticia-10, .noticia-9 {
         display: none;
-    }
-
-    .proyecto1 a, .proyecto2 a,.proyecto3 a {
-        transition: all 1s;
-    }
-
-    .proyecto1 a:hover {
-        box-shadow: -1px -1px 10px #FF0AC8, 1px 1px 10px #00FFF6;
-        transform: scale(1.02);
-    }
-    
-    .proyecto2 a:hover {
-        box-shadow: -1px -1px 10px #FF0AC8, 1px 1px 10px #00FFF6;
-        transform: scale(1.02);
-    }
-    
-    
-    .proyecto3 a:hover {
-        box-shadow: -1px -1px 10px #FF0AC8, 1px 1px 10px #00FFF6;
-        transform: scale(1.02);
     }
 }

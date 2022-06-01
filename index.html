@@ -5,47 +5,69 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Somos CompuTodos</title>
-	<link rel="stylesheet" href="./css/styles.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap"
 		rel="stylesheet">
 	<script src="https://kit.fontawesome.com/985a7b39b2.js" crossorigin="anonymous"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
 
 
-	<div class="container">
+	<div class="container-index">
 
 
-		<header class="border">
-			<div class="logo">
-				<img src="./images/logo.png" class="logo__img">
-				<h1 class="logo__h1"><a href="index.html">CompuTodos</a></h1>
-			</div>
-			<nav class="nav">
-				<input type="checkbox" id="check">
-				<label for="check" class="checkbtn">
-					<i class="fa-solid fa-bars"></i>
-				</label>
-				<ul class="nav__ul">
-					<li class="nav__ul__li"><a href="#"><i class="fa-solid fa-house"></i>Inicio</a></li>
-					<li class="nav__ul__li"><a href="./pages/registrarme.html"><i class="fa-solid fa-user"></i>Registrarme</a></li>
-					<li class="nav__ul__li"><a href="./pages/sobre-nosotros.html"><i class="fa-solid fa-users"></i>Sobre nosotros</a></li>
-					<li class="nav__ul__li"><a href="./pages/herramientas.html"><i class="fa-solid fa-toolbox"></i>Herramientas</a></li>
-					<li class="nav__ul__li"><a href="./pages/ayuda.html"><i class="fa-solid fa-handshake-angle"></i>Ayuda</a></li>
-				</ul>
+		<header>
+			<nav class="navbar navbar-expand-lg bg-transparent">
+				<div class="container-fluid">
+					<div class="logotipo">
+						<a href="#" class="d-flex align-items-center logo__a">
+							<img src="./images/logo.png" alt="Logo">
+							<h1 class="fs-3" href="#">CompuTodos</h1>
+						</a>
+					</div>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+						data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+						aria-label="Toggle navigation">
+						<span class="fa-solid fa-bars"></span>
+					</button>
+					<div class="collapse navbar-collapse d-lg-flex justify-content-lg-end menu-desplegable" id="navbarNavDropdown">
+						<ul class="navbar-nav">
+							<li class="nav-item mx-auto ms-lg-3">
+								<a class="nav-link color-default" href="#"><i
+										class="fa-solid fa-house pe-2"></i>Inicio</a>
+							</li>
+							<li class="nav-item mx-auto ms-lg-3">
+								<a class="nav-link color-default" href="./pages/registrarme.html"><i
+										class="fa-solid fa-user pe-2"></i>Registrarme</a>
+							</li>
+							<li class="nav-item mx-auto ms-lg-3">
+								<a class="nav-link color-default" href="./pages/sobre-nosotros.html"><i
+										class="fa-solid fa-users pe-2"></i>Sobre nosotros</a>
+							</li>
+							<li class="nav-item mx-auto ms-lg-3">
+								<a class="nav-link color-default" href="./pages/herramientas.html"><i class="fa-solid fa-toolbox pe-2"></i>Herramientas</a>
+							</li>
+							<li class="nav-item mx-auto ms-lg-3">
+								<a class="nav-link color-default" href="./pages/ayuda.html"><i class="fa-solid fa-handshake-angle pe-2"></i>ayuda</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</nav>
 		</header>
 
 
-		<div class="background border">
+		<div class="background">
 			<h2 class="background-h2">Computadoras, el camino al futuro ya está aquí...</h2>
 		</div>
 
 
-		<section class="section1 border">
+		<section class="section1">
 			<article class="section__article">
 				<h3 class="article__h3 ">Mantenimiento:</h3>
 				<p class="article__p">A la hora de hablar de mantenimiento se tienen que tener varias pautas para
@@ -128,7 +150,7 @@
 						aplicación esta suele secarse y pierde propiedades de conducción por lo que disipa menos el
 						calor, hay distintas <a
 							href="https://hardzone.es/tutoriales/montaje/como-aplicar-pasta-termica-procesador/"
-							target="blank">formas de aplicación</a></dd>
+							target="blank" class="color-default">formas de aplicación</a></dd>
 					<dt class="dl__dt">Alcohol isopropílico</dt>
 					<dd>Este es un alcohol de rápido evaporación, casi inmediata por lo que es muy recomendable para
 						la
@@ -138,99 +160,109 @@
 		</section>
 
 
-		<div class="container-slider-table border">
+		<div class="container-slider-table">
+			<div class="container-fluid">
+				<div class="row">
 
-			<div class="slider-dividing-line">
-				<div class="slider-effect">
-					<ul>
-						<li>
-							<img src="./images/imagen2.jpg" class="slider-effect__img">
-						</li>
-						<li>
-							<img src="./images/imagen3.jpg" class="slider-effect__img">
-						</li>
-						<li>
-							<img src="./images/imagen4.jpg" class="slider-effect__img">
-						</li>
-						<li>
-							<img src="./images/imagen5.jpg" class="slider-effect__img">
-						</li>
+					<div class="col-lg-6">
+						<div class="slider-dividing-line">
+							<div class="slider-effect">
+								<ul>
+									<li>
+										<img src="./images/imagen2.jpg" class="slider-effect__img">
+									</li>
+									<li>
+										<img src="./images/imagen3.jpg" class="slider-effect__img">
+									</li>
+									<li>
+										<img src="./images/imagen4.jpg" class="slider-effect__img">
+									</li>
+									<li>
+										<img src="./images/imagen5.jpg" class="slider-effect__img">
+									</li>
 
-					</ul>
+								</ul>
+							</div>
+
+							<div class="container-dividing-line">
+								<img src="./images/linea.png" class="dividing-line">
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-6 px-0">
+						<div class="container-tabla">
+							<table class="tabla-index">
+								<caption class="caption-top text-center caption-tabla color-default">Datos curiosos:
+									Mejores procesadores en base a potencia/precio
+								</caption>
+								<thead class="table__thead">
+									<th class="thead__th">Nombre</td>
+									<th class="thead__th">Nucleos / hilos</td>
+									<th class="thead__th">Frec.base / OC</td>
+									<th class="thead__th">Precio (Aproximado)</td>
+								</thead>
+								<tr class="table__tr">
+									<td class="tr__td">Ryzen 9 5950X</td>
+									<td class="tr__td">16 / 32</td>
+									<td class="tr__td">3.4 / 4.9</td>
+									<td class="tr__td">100.000 ARS</td>
+								</tr>
+								<tr class="table__tr">
+									<td class="tr__td">Core i9-12900KF</td>
+									<td class="tr__td">16 / 24</td>
+									<td class="tr__td">3.2 / 5.2</td>
+									<td class="tr__td">110.000 ARS</td>
+								</tr>
+								<tr class="table__tr">
+									<td class="tr__td">Ryzen 9 5900X</td>
+									<td class="tr__td">12 / 24</td>
+									<td class="tr__td">3.7 / 4.8</td>
+									<td class="tr__td">75.000 ARS</td>
+								</tr>
+								<tr class="table__tr">
+									<td class="tr__td">Core i9-12900F</td>
+									<td class="tr__td">16 / 24</td>
+									<td class="tr__td">2.4 / 5.1</td>
+									<td class="tr__td">95.000 ARS</td>
+								</tr>
+
+							</table>
+						</div>
+					</div>
+
 				</div>
-
-				<div class="container-dividing-line">
-					<img src="./images/linea.png" class="dividing-line">
-				</div>
-			</div>
-
-			<div class="container-table">
-				<table class="table">
-					<caption class="table__caption">Datos curiosos: Mejores procesadores en base a potencia/precio
-					</caption>
-					<thead class="table__thead">
-						<th class="thead__th">Nombre</td>
-						<th class="thead__th">Nucleos / hilos</td>
-						<th class="thead__th">Frec.base / OC</td>
-						<th class="thead__th">Precio (Aproximado)</td>
-					</thead>
-					<tr class="table__tr">
-						<td class="tr__td">Ryzen 9 5950X</td>
-						<td class="tr__td">16 / 32</td>
-						<td class="tr__td">3.4 / 4.9</td>
-						<td class="tr__td">100.000 ARS</td>
-					</tr>
-					<tr class="table__tr">
-						<td class="tr__td">Core i9-12900KF</td>
-						<td class="tr__td">16 / 24</td>
-						<td class="tr__td">3.2 / 5.2</td>
-						<td class="tr__td">110.000 ARS</td>
-					</tr>
-					<tr class="table__tr">
-						<td class="tr__td">Ryzen 9 5900X</td>
-						<td class="tr__td">12 / 24</td>
-						<td class="tr__td">3.7 / 4.8</td>
-						<td class="tr__td">75.000 ARS</td>
-					</tr>
-					<tr class="table__tr">
-						<td class="tr__td">Core i9-12900F</td>
-						<td class="tr__td">16 / 24</td>
-						<td class="tr__td">2.4 / 5.1</td>
-						<td class="tr__td">95.000 ARS</td>
-					</tr>
-
-				</table>
 			</div>
 		</div>
 
 
-		<div class="noticias1 border">
+		<div class="noticias1">
 			<div class="noticias-container noticia-1">
-				<a href="#">
+				<a href="#" class="color-default">
 					<img src="./images/notice1.jpg" alt="notice 1" class="notice-img">
 					<p>Mineros dejan de comprar gráficas ¿precios por debajo del oficial?...</p>
 				</a>
 			</div>
 			<div class="noticias-container noticia-2">
-				<a href="#">
+				<a href="#" class="color-default">
 					<img src="./images/notice2.jpg" alt="notice 2" class="notice-img">
 					<p>¿Por qué se dice siempre que lo mejor es utilizar una fuente certificiada?...</p>
 				</a>
 			</div>
 			<div class="noticias-container noticia-3">
-				<a href="#">
+				<a href="#" class="color-default">
 					<img src="./images/notice3.jpg" alt="notice 3" class="notice-img">
 					<p>¿Qué tan importante es una buena circulación de aire en tu gabinete?...</p>
 				</a>
 			</div>
 			<div class="noticias-container noticia-4">
-				<a href="#">
+				<a href="#" class="color-default">
 					<img src="./images/notice4.jpg" alt="notice 4" class="notice-img">
 					<p>Los rumores de las nuevas placas de video nvidia serie 4000 son cada vez más fuertes...</p>
 				</a>
 			</div>
 			<div class="noticias-container noticia-5">
-				<a href="#">
+				<a href="#" class="color-default">
 					<img src="./images/notice5.jpg" alt="notice 5" class="notice-img">
 					<p>Un dilema de vida al entrar en el mundo de las computadoras ¿AMD o INTEL? En esto se destaca cada
 						uno...</p>
@@ -239,7 +271,7 @@
 		</div>
 
 
-		<section class="section2 border">
+		<section class="section2">
 			<article>
 				<h3 class="article__h3">Posibles problemas al rearmar la computadora</h3>
 				<p class="article__p">Algo que puede suceder en algunos casos al reensamblar la pc es que no de
@@ -308,33 +340,34 @@
 		</section>
 
 
-		<div class="noticias2 border">
+		<div class="noticias2">
 			<div class="noticias-container noticia-6">
-				<a href="#">
+				<a href="#" class="color-default">
 					<img src="./images/notice6.jpg" alt="notice 6" class="notice-img">
 					<p>¿New world, el juego incinerador de gráficas? Todo lo que tenes que saber al respecto...</p>
 				</a>
 			</div>
 			<div class="noticias-container noticia-7">
-				<a href="#">
+				<a href="#" class="color-default">
 					<img src="./images/notice7.png" alt="notice 7" class="notice-img">
 					<p>¿CAPCOM aunciará la salida del remake de uno de sus mayores éxitos?...</p>
 				</a>
 			</div>
 			<div class="noticias-container noticia-8">
-				<a href="#">
+				<a href="#" class="color-default">
 					<img src="./images/notice8.jpg" alt="notice 8" class="notice-img">
 					<p>Estos son los mejores mouse en torno a calidad precio para arrasar en los shooters...</p>
 				</a>
 			</div>
 			<div class="noticias-container noticia-9">
-				<a href="#">
+				<a href="#" class="color-default">
 					<img src="./images/notice9.jpg" alt="notice 9" class="notice-img">
-					<p>Todo lo que se sabe de la posible salida de uno de los juegos más esperados por todos, GTA VI...</p>
+					<p>Todo lo que se sabe de la posible salida de uno de los juegos más esperados por todos, GTA VI...
+					</p>
 				</a>
 			</div>
 			<div class="noticias-container noticia-10">
-				<a href="#">
+				<a href="#" class="color-default">
 					<img src="./images/notice10.jpg" alt="notice 10" class="notice-img">
 					<p>¿Gráficas dedicadas de INTEL? Toda la información oficial en el mercado...</p>
 				</a>
@@ -342,24 +375,46 @@
 		</div>
 
 
-		<footer class="border">
-			<div class="container-dividing-line2">
-				<img src="./images/linea.png" class="dividing-line2">
-			</div>
-			<div class="footer-container">
-				<span class="title__footer"><strong>Ante cualquier duda contactanos, nos encontramos como:</strong></span>
-				<div class="contacto">
-					<span class="footer__span"><a href="mailto:computodos23@gmail.com"><i class="fa-regular fa-envelope"></i>Computodos23@gmail.com</a></span>
-					<span class="footer__span"><a href="https://www.instagram.com/p.rueba.2628/?hl=es" target="blank"><i class="fa-brands fa-instagram"></i>CompuTodos_Por_y_Para_vos</a></span>
-					<span class="footer__span"><a href="#"><i class="fa-solid fa-phone"></i>0909-0987</a></span>
-					<span class="footer__span"><a href="#"><i class="fa-brands fa-whatsapp"></i>+54 9 11 5498-0934</a></span>
+		<footer>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="container-dividing-line2">
+						<img src="./images/linea.png" class="dividing-line2">
+					</div>
 				</div>
-				<span class="footer__span copyright">©2022 CompuTodos todos los derechos reservados</span>
+				<div class="row text-center">
+					<div class="footer-container mx-0 px-0">
+						<span class="title__footer d-block"><strong>Ante cualquier duda contactanos, nos encontramos
+								como:</strong></span>
+						<div class="contacto">
+							<span class="footer__span d-block py-1 d-md-inline-block ps-md-4 my-md-3"><a
+									href="mailto:computodos23@gmail.com" class="color-default"><i
+										class="fa-regular fa-envelope pe-2"></i>Computodos23@gmail.com</a></span>
+							<span class="footer__span d-block py-1 d-md-inline-block ps-md-4 my-md-3"><a
+									href="https://www.instagram.com/p.rueba.2628/?hl=es" target="blank"
+									class="color-default"><i
+										class="fa-brands fa-instagram pe-2"></i>CompuTodos_Por_y_Para_vos</a></span>
+							<span class="footer__span d-block py-1 d-md-inline-block ps-md-4 my-md-3"><a href="#"
+									class="color-default"><i class="fa-solid fa-phone pe-2"></i>0909-0987</a></span>
+							<span class="footer__span d-block py-1 d-md-inline-block ps-md-4 my-md-3"><a href="#"
+									class="color-default"><i class="fa-brands fa-whatsapp pe-2"></i>+54 9 11
+									5498-0934</a></span>
+						</div>
+					</div>
+				</div>
+				<div class="row text-center">
+					<span class="footer__span copyright d-block">©2022 CompuTodos todos los derechos reservados</span>
+				</div>
 			</div>
 		</footer>
 
 
 	</div>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+	</script>
 
 
 </body>
